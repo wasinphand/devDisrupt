@@ -88,14 +88,14 @@ const Projectdetail = ({ router }) => (
                                 <Box width="50vw">
                                     <Flex align="flex-end">
                                         <Text fontSize="30px">฿{datas[router.query.id].nowFund}</Text>
-                                        <Text mb={1} fontSize="15px" color="gray.500" > / ฿200,000</Text>
+                                        <Text mb={1} fontSize="15px" color="gray.500" > / ฿{datas[router.query.id].totalFund}</Text>
                                     </Flex>
 
                                 </Box>
                                 <Box ml="auto">
 
                                     <Button width="100%" variantColor="teal" variant="outline">
-                                        112 givers
+                                    {datas[router.query.id].giver} givers
   </Button>
 
                                 </Box>
@@ -142,7 +142,7 @@ const Projectdetail = ({ router }) => (
 
                     <Box px={8} width="100%" mt={4} mb={2} mx="auto">
                         <Box mb={2} textAlign="center">
-                            คุณกำลังสนับสนุนโครงการxxxxxxxThailand Recovery Fund
+                            คุณกำลังสนับสนุนโครงการ {datas[router.query.id].title}
                             </Box>
                         <Box>
                             <AirbnbExample />
