@@ -1,13 +1,11 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-
+import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 
 export default function Home() {
-
-
-
-
   return (
+    <ThemeProvider>
+       <CSSReset />
     <div className={styles.container}>
       Hello NextJS
       <ul>
@@ -21,8 +19,14 @@ export default function Home() {
             <a>About Us</a>
           </Link>
         </li>
+        <li>
+          <Link href="/projectdetail">
+            <a>Project-detail</a>
+          </Link>
+        </li>
       </ul>
       
     </div>
+    </ThemeProvider>
   )
 }
