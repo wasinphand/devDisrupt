@@ -1,0 +1,63 @@
+export const datas = [
+    {
+        id:1,
+        title:'Thailand Recovery Fund',
+        picture:'https://d2g79oifq3rgie.cloudfront.net/wp-content/uploads/2020/08/27092544/thailandrecoveryfund-01.jpg',
+        shortDesc:'ช่วยเหลือกลุ่มคนที่ยังไม่อาจฟื้นตัวจากวิกฤตโควิด-19',
+        description : 'โครงการ Thailand Recovery Fund ก่อตั้งโดยทีม Socialgiver มีเป้าหมายหลักในการระดมทุน ',
+        nowFund : 150,
+        totalFund : 5000,
+        giver : 320
+    },
+    {
+        id:2,
+        title:'Covid Relief',
+        picture:'https://d2g79oifq3rgie.cloudfront.net/wp-content/uploads/2017/03/23110227/chiangdao_socialgiver_00.jpg',
+        shortDesc : 'ช่วยเหลือกลุ่มผู้สูงอายุ และผู้ที่มีรายได้ต่ำ ที่ได้รับผลกระทบจากโควิด-19',
+        description : 'โครงการ Covid Relief ก่อตั้งขึ้นจากความร่วมมือขององค์กรที่กำลังเผชิญกับผลกระทบจากโรคติด',
+        nowFund : 450,
+        totalFund : 6000,
+        giver : 200
+    },
+    {
+        id:3,
+        title:'Protect Our Doctors',
+        picture:'https://d2g79oifq3rgie.cloudfront.net/wp-content/uploads/2020/03/24094032/latest.png',
+        shortDesc:'ระดมทุนช่วยเหลือบุคลากรทางการแพทย์ ต้านวิกฤตโรคติดเชื้อ โควิด 19',
+        description : 'เป้าหมายหลักของการระดมทุนครั้งนี้คือ การเพิ่มศักยภาพในการให้ความช่วยเหลือแก่ผู้ป่วยติดเชื้อไวรัสโคโรนา 2019 โดยเฉพาะบุคลากร',
+        nowFund : 150,
+        totalFund : 5000,
+        giver : 234,
+    },
+    {
+        id:4,
+        title:'Teach For Thailand',
+        picture:'https://d2g79oifq3rgie.cloudfront.net/wp-content/uploads/2020/03/06105944/1.jpg',
+        shortDesc : 'สร้างและพัฒนาครูผู้สอนที่พร้อมส่งต่อความรู้สู่เด็กด้อยโอกาส',
+        description : 'Teach for Thailand สนับสนุนให้คนรุ่นใหม่จบการศึกษาระดับปริญญาตรีขึ้นไป ที่มีความมุ่งมั่นตั้งใจและเชื่อมั่นในวิสัยทัศน์ของเรา มาเข้าร่วมโครงการ ',
+        nowFund : 500,
+        totalFund : 5000,
+        giver : 405,
+    },
+    {
+        id:5,
+        title:'Satury School',
+        picture:'https://d2g79oifq3rgie.cloudfront.net/wp-content/uploads/2020/02/03112126/ff.jpg',
+        shortDesc : 'มอบโอกาสทางการศึกษาให้เด็กด้อยโอกาส, ทุก 4,000 บาท คุณสามารถ',
+        description : 'Saturday School คือ องค์กรไม่แสวงหาผลกำไรด้านการศึกษา ซึ่งมีเป้าหมายหลักคือการพัฒนาการศักยภาพทางการศึกษาให้แก่เด็กที่ขาดโอกาส',
+        nowFund : 680,
+        totalFund : 15000,
+        giver : 120,
+    },
+    {
+        id:6,
+        title:'6',
+        picture:'https://d2g79oifq3rgie.cloudfront.net/wp-content/uploads/2018/07/04083342/10-9-60_170918_00941.jpg',
+        shortDesc :  'อบรม รุกขกรขั้นสูง ช่วยตกแต่งและดูแลต้นไม้ใหญ่ในเมือง',
+        description : 'กลุ่ม Big Trees ร่วมกับ ภาควิชาภูมิสถาปัตยกรรม คณะสถาปัตยกรรมศาสตร์ มหาวิทยาลัยธรรมศาสตร์ ตั้งใจพัฒนาหลักสูตรสำหรับ',
+        nowFund : 150,
+        totalFund : 5000,
+        giver : 220,
+    },
+
+]
