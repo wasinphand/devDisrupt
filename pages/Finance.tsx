@@ -63,7 +63,7 @@ export default function Finance() {
             <Box p={5} shadow="md" borderWidth="1px" {...rest}>
                 <Heading fontSize="xl">{title}</Heading>
                 <Heading fontSize="s">{money}</Heading>
-                <Text mt={4}>{desc}</Text>
+                <Text my={4}>{desc}</Text>
                 <Link href={linkto}>
                     <Button>See more</Button>
                 </Link>

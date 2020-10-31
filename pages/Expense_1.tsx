@@ -28,7 +28,11 @@ export default function Expence_1() {
                     </Flex>
                     <Flex align='center' mx={100}>
                         <Flex>
-                            <Image src="https://www2.cortland.edu/cost-aid/images/samplebill.png" />
+                            <Image mx={5} src="https://www2.cortland.edu/cost-aid/images/samplebill.png" />
+                            <Image mx={5} src="https://www.paiteawduaykan.com/upload/article/glsavkq3xhil83k58zwqzd2l52ven9lzwkourmrr8mzbd8selzxuynfzhpxf.jpg" />
+                        </Flex>
+                        <Flex>
+
                         </Flex>
                     </Flex>
                 </Box>
