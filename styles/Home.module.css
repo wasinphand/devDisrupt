@@ -35,3 +35,10 @@
   color: #ffff;
   font-weight: 300;
 }
+
+.table {
+  margin: 30px;
+  border: 1px solid black;
+  width: 1500px;
+  height: 100px;
+}
