@@ -7,7 +7,7 @@ export default function Boxes(){
     return (
         <div style={{paddingLeft:"9.75%"}}>
                 {datas.map((data,index)=>
-                <Link href= {`projectdetail?id=`+data.id}>
+                <Link href= {`projectdetail?id=${data.id - 1}`}>
                 <div style={{display:'inline-block',justifyContent:"space-between",marginRight:"20px",paddingTop:"30px"}}>
                 <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
         
