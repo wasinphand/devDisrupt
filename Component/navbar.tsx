@@ -1,5 +1,5 @@
-import React from 'react'
-import {Box} from "@chakra-ui/core"
+import React from "react";
+import { Box } from "@chakra-ui/core";
 
 const Navbar = () => {
   return (
@@ -8,8 +8,7 @@ const Navbar = () => {
         LOGO
       </Box>
     </>
-  )
-}
+  );
+};
 
-
-export default Navbar
+export default Navbar;

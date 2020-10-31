@@ -1,23 +1,26 @@
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import { Header } from "../Component/Header";
-import { ThemeProvider, CSSReset } from "@chakra-ui/core";
-import Boxes from "../Component/Boxes";
-import Navbar from "../Component/navbar";
+import { ThemeProvider, CSSReset, SimpleGrid, Heading } from "@chakra-ui/core";
+
+import PageLayout from "../Component/PageLayout";
+import Card from "../Component/Card";
+
+import { datas } from "../hookApi/mockData";
 
 export default function Home() {
   return (
     <ThemeProvider>
       <CSSReset />
-      <div className={styles.container}>
-        <Navbar />
-        <div className={styles.banner}>
-          100% of your donation via Socialgiver goes to social projects!
-        </div>
-        <Boxes />
-      </div>
-      <CSSReset />
-      <div className={styles.container}></div>
+      <PageLayout>
+        <Heading mb={4}>โครงการที่น่าสนใจสำหรับคุณ</Heading>
+        <SimpleGrid columns={3} spacing={4}>
+          {datas.map((data) => {
+            return (
+              <>
+                <Card {...data} key={data.id} />
+              </>
+            );
+          })}
+        </SimpleGrid>
+      </PageLayout>
     </ThemeProvider>
   );
 }
