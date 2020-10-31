@@ -2,6 +2,11 @@ import { Box, Flex, Text, Stack, Progress, Badge, Image, Button, TabPanel, TabPa
 import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import { withRouter } from 'next/router';
 import { datas } from '../hookApi/mockData';
+import Activitycomponent from "../Component/Activitytrack";
+import Financialcomponent from "../Component/Financialtrack";
+
+
+
 // Sample card from Airbnb
 
 function AirbnbExample() {
@@ -64,6 +69,18 @@ function AirbnbExample() {
         </Box>
     );
 }
+function Commentbox() {
+    return (
+        <Flex>
+            Test
+
+        </Flex>
+    );
+}
+
+
+
+
 //function Projectdetail() 
 const Projectdetail = ({ router }) => (
     <ThemeProvider>
@@ -95,7 +112,7 @@ const Projectdetail = ({ router }) => (
                                 <Box ml="auto">
 
                                     <Button width="100%" variantColor="teal" variant="outline">
-                                    {datas[router.query.id].giver} givers
+                                        {datas[router.query.id].giver} givers
   </Button>
 
                                 </Box>
@@ -123,15 +140,18 @@ const Projectdetail = ({ router }) => (
                                     </TabPanel>
                                     <TabPanel p={5}>
                                         {/* activity track */}
-                                        <p>ข้อมูลกิจกรรม!</p>
+                                        {/* <p>ข้อมูลกิจกรรม!</p> */}
+                                        <Activitycomponent />
                                     </TabPanel>
                                     <TabPanel p={5}>
                                         {/* finacail track */}
-                                        <p>ข้อมูลการใช้เงิน!</p>
+                                        <Financialcomponent />
+                                        
                                     </TabPanel>
                                     <TabPanel p={5}>
                                         {/* comment */}
                                         <p>แสดงความคิดเห็น!</p>
+                                        <Commentbox />
                                     </TabPanel>
                                 </TabPanels>
                             </Tabs>
@@ -143,7 +163,7 @@ const Projectdetail = ({ router }) => (
                     <Box px={8} width="100%" mt={4} mb={2} mx="auto">
                         <Box mb={2} textAlign="center">
                             คุณกำลังสนับสนุนโครงการ {datas[router.query.id].title}
-                            </Box>
+                        </Box>
                         <Box>
                             <AirbnbExample />
                         </Box>
