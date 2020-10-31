@@ -1,6 +1,7 @@
 import { Box, Flex, Text, Stack, Badge, Image, Button } from "@chakra-ui/core";
 import { ThemeProvider, CSSReset } from '@chakra-ui/core'
-
+import {withRouter} from 'next/router';
+import {datas} from '../hookApi/mockData';
 // Sample card from Airbnb
 
 function AirbnbExample() {
@@ -63,19 +64,18 @@ function AirbnbExample() {
         </Box>
     );
 }
-
-export default function Projectdetail() {
-    return (
+//function Projectdetail() 
+const Projectdetail = ({router}) =>  (
         <ThemeProvider>
             <CSSReset />
             <div>
-                <h1>Project detail</h1>
+                <h1>Project detail </h1>
                 <Flex width="70vw" p="6" align="center">
                     <Flex align="flex-end">
                         <Box >
                             <Text>
-                                ช่วยเหลือกลุ่มคนที่ยังไม่อาจฟื้นตัวจากวิกฤตโควิด-19, กองทุนที่เป็นหัวใจสำคัญในการผลักดันหน่วยงานเพื่อสังคม ให้ยังดำเนินงานได้อย่างมีประสิทธิภาพ ท่ามกลางวิกฤตเศรษฐกิจ
-                    </Text>
+                                {datas[router.query.id].description}
+                            </Text>
                         </Box>
                     </Flex>
                 </Flex>
@@ -83,7 +83,7 @@ export default function Projectdetail() {
                     <Flex width="73vw" align="flex-top">
                         <Box>
                             <Box textAlign="center">
-                                <Image mt={4} mx="auto" width="80%" rounded="30px" src="https://www.popticles.com/wp-content/uploads/2020/04/ExamplesCSR-103.jpg" alt="Segun Adebayo" />
+                                <Image mt={4} mx="auto" width="80%" rounded="30px" src={datas[router.query.id].picture} alt="Segun Adebayo" />
                             </Box>
                             <Box mt={5} mx={10}>
                                 <Text>ระดมทุนได้</Text>
@@ -91,13 +91,13 @@ export default function Projectdetail() {
                             <Box mx={10}>
                                 <Flex>
                                     <Box width="50vw">
-                                        <Text fontSize="30px">฿70,906</Text>
+                                        <Text fontSize="30px">฿{datas[router.query.id].nowFund} </Text>
                                     </Box>
                                     <Box>
 
                                         <Button variantColor="teal" variant="outline">
                                             Button
-  </Button>
+                                        </Button>
                                     </Box>
                                 </Flex>
 
@@ -135,4 +135,4 @@ export default function Projectdetail() {
             </div>
         </ThemeProvider>
     )
-}
+export default withRouter(Projectdetail);

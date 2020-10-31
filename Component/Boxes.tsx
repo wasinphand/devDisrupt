@@ -1,10 +1,13 @@
 import { Box,Image } from "@chakra-ui/core";
 import {datas} from '../hookApi/mockData';
+import Link from 'next/link'
+
 
 export default function Boxes(){
     return (
         <div style={{paddingLeft:"9.75%"}}>
                 {datas.map((data,index)=>
+                <Link href= {`projectdetail?id=`+data.id}>
                 <div style={{display:'inline-block',justifyContent:"space-between",marginRight:"20px",paddingTop:"30px"}}>
                 <Box maxW="sm" borderWidth="1px" rounded="lg" overflow="hidden">
         
@@ -32,7 +35,7 @@ export default function Boxes(){
                         </b>
                     </div>
                    
-                </Box></div>)}
+                </Box></div></Link>)}
              
         </div>
     
