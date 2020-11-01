@@ -267,8 +267,8 @@ const Projectdetail = ({ router }) => {
           </Box>
         </Flex>
         <Flex bg="gray.50" width="30vw" align="flex-top" justify="center">
-          <Stack spacing={8} mt="20vh">
-            <Box px={8} width="100%" mt={4} mb={2} mx="auto">
+          <Stack spacing={8} mt="5vh">
+            <Box px={8} width="100%" mb={2} mx="auto">
               <Box mb={2} textAlign="center">
                 คุณกำลังสนับสนุนโครงการ {datas[router.query.id].title}
               </Box>
@@ -276,7 +276,9 @@ const Projectdetail = ({ router }) => {
                 <Text>สำหรับบริษัท</Text>
               </Box>
               <Box>
-                <Button width="100%">ติดต่อโครงการ</Button>
+                <Button width="100%" variantColor="green">
+                  ติดต่อโครงการ
+                </Button>
               </Box>
               <Box mt={5}>
                 <Text>สำหรับผู้บริจาคทั่วไป</Text>
@@ -320,6 +322,11 @@ const Projectdetail = ({ router }) => {
                   <FormLabel>Email</FormLabel>
                   <Input placeholder="Email" />
                 </FormControl>
+                <Box mt="1vh" display="flex" flexDirection="row">
+                  <Button width="100%" variantColor="green">
+                    Submit
+                  </Button>
+                </Box>
               </Box>
             </Box>
           </Stack>
