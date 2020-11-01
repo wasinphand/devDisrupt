@@ -186,8 +186,8 @@ const Projectdetail = ({ router }) => (
             </Box>
           </Box>
         </Flex>
-        <Flex bg="gray.50" width="30vw" align="center" justify="center">
-          <Stack spacing={3}>
+        <Flex bg="gray.50" width="30vw" align="flex-top" justify="center">
+          <Stack spacing={8} mt="20vh">
             <Box px={8} width="100%" mt={4} mb={2} mx="auto">
               <Box mb={2} textAlign="center">
                 คุณกำลังสนับสนุนโครงการ {datas[router.query.id].title}
@@ -198,6 +198,7 @@ const Projectdetail = ({ router }) => (
               <Box>
                 <Button width="100%">ติดต่อโครงการ</Button>
               </Box>
+
               <Box>
                 <FormControl id="Money" isRequired>
                   <FormLabel>จำนวนเงินที่ต้องการบริจาค</FormLabel>
