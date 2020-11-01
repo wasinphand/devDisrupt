@@ -185,31 +185,33 @@ const Projectdetail = ({ router }) => (
           </Box>
         </Flex>
         <Flex bg="gray.50" width="30vw" align="center" justify="center">
-          <Box px={8} width="100%" mt={4} mb={2} mx="auto">
-            <Box mb={2} textAlign="center">
-              คุณกำลังสนับสนุนโครงการ {datas[router.query.id].title}
+          <Stack spacing={3}>
+            <Box px={8} width="100%" mt={4} mb={2} mx="auto">
+              <Box mb={2} textAlign="center">
+                คุณกำลังสนับสนุนโครงการ {datas[router.query.id].title}
+              </Box>
+              <Box>
+                <Text>สำหรับบริษัท</Text>
+              </Box>
+              <Box>
+                <Button width="100%">ติดต่อโครงการ</Button>
+              </Box>
+              <Box>
+                <FormControl id="Money" isRequired>
+                  <FormLabel>จำนวนเงินที่ต้องการบริจาค</FormLabel>
+                  <Input placeholder="1000" />
+                </FormControl>
+                <FormControl id="first-name" isRequired>
+                  <FormLabel>First name</FormLabel>
+                  <Input placeholder="First name" />
+                </FormControl>
+                <FormControl id="last-name" isRequired>
+                  <FormLabel>Last name</FormLabel>
+                  <Input placeholder="Last name" />
+                </FormControl>
+              </Box>
             </Box>
-            <Box my={3}>
-              <Text>สำหรับบริษัท</Text>
-            </Box>
-            <Box my={3}>
-              <Button width="100%">ติดต่อโครงการ</Button>
-            </Box>
-            <Box>
-              <FormControl id="Money" isRequired>
-                <FormLabel>จำนวนเงินที่ต้องการบริจาค</FormLabel>
-                <Input placeholder="1000" />
-              </FormControl>
-              <FormControl id="first-name" isRequired>
-                <FormLabel>First name</FormLabel>
-                <Input placeholder="First name" />
-              </FormControl>
-              <FormControl id="last-name" isRequired>
-                <FormLabel>Last name</FormLabel>
-                <Input placeholder="Last name" />
-              </FormControl>
-            </Box>
-          </Box>
+          </Stack>
         </Flex>
       </Flex>
     </div>
