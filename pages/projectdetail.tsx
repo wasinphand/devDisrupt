@@ -32,7 +32,7 @@ import PageLayout from "../Component/PageLayout";
 
 // Sample card from Airbnb
 
-function AirbnbExample() {
+/*function AirbnbExample() {
     const property = {
         imageUrl:
             "https://thumbs.dreamstime.com/b/sponsor-stamp-vector-sign-seal-logo-isolated-white-background-86263619.jpg",
@@ -97,7 +97,7 @@ function AirbnbExample() {
             </Box>
         </Box>
     );
-}
+}*/
 
 //function Projectdetail()
 const Projectdetail = ({ router }) => {
