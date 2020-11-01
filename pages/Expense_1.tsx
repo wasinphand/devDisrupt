@@ -12,7 +12,39 @@ import {
 } from "@chakra-ui/core";
 import Link from "next/link";
 import { flex } from "styled-system";
-
+function Comment({ title, desc, linkim, ...rest }) {
+  return (
+    <Box p={5} shadow="md" borderWidth="1px" {...rest}>
+      <Flex>
+        <Flex>
+          <Image rounded="full" size="30px" src={linkim} />
+          <Heading mx={3} my={1} fontSize="xl">
+            {title}
+          </Heading>
+        </Flex>
+      </Flex>
+      <Text mt={4}>{desc}</Text>
+    </Box>
+  );
+}
+function CommentCore({ title, desc, linkim, ...rest }) {
+  return (
+    <Box p={5} shadow="md" borderWidth="1px" {...rest}>
+      <Flex>
+        <Flex>
+          <Image rounded="full" size="30px" src={linkim} />
+          <Heading mx={3} my={1} fontSize="xl">
+            {title}
+            <Badge variantColor="red" fontSize="xl" ml={2}>
+              Core Team
+            </Badge>
+          </Heading>
+        </Flex>
+      </Flex>
+      <Text mt={4}>{desc}</Text>
+    </Box>
+  );
+}
 export default function Expence_1() {
   function Feature({ title, desc, money, linkto, ...rest }) {
     return (
@@ -23,39 +55,7 @@ export default function Expence_1() {
       </Box>
     );
   }
-  function Comment({ title, desc, linkim, ...rest }) {
-    return (
-      <Box p={5} shadow="md" borderWidth="1px" {...rest}>
-        <Flex>
-          <Flex>
-            <Image rounded="full" size="30px" src={linkim} />
-            <Heading mx={3} my={1} fontSize="xl">
-              {title}
-            </Heading>
-          </Flex>
-        </Flex>
-        <Text mt={4}>{desc}</Text>
-      </Box>
-    );
-  }
-  function CommentCore({ title, desc, linkim, ...rest }) {
-    return (
-      <Box p={5} shadow="md" borderWidth="1px" {...rest}>
-        <Flex>
-          <Flex>
-            <Image rounded="full" size="30px" src={linkim} />
-            <Heading mx={3} my={1} fontSize="xl">
-              {title}
-              <Badge variantColor="red" fontSize="xl" ml={2}>
-                Core Team
-              </Badge>
-            </Heading>
-          </Flex>
-        </Flex>
-        <Text mt={4}>{desc}</Text>
-      </Box>
-    );
-  }
+
   return (
     <ThemeProvider>
       <CSSReset />

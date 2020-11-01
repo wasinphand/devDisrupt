@@ -176,7 +176,9 @@ const Projectdetail = ({ router }) => (
                   </TabPanel>
                   <TabPanel p={5}>
                     {/* comment */}
-                    <p>แสดงความคิดเห็น!</p>
+
+
+
                     <Commentbox />
                   </TabPanel>
                 </TabPanels>
