@@ -2,7 +2,7 @@ export const datas = [
     {
         id:1,
         title:'Thailand Recovery Fund',
-        picture:'https://d2g79oifq3rgie.cloudfront.net/wp-content/uploads/2020/08/27092544/thailandrecoveryfund-01.jpg',
+        picture:'https://mpics.mgronline.com/pics/Images/560000004398401.JPEG',
         shortDesc:'ช่วยเหลือกลุ่มคนที่ยังไม่อาจฟื้นตัวจากวิกฤตโควิด-19',
         description : 'โครงการ Thailand Recovery Fund ก่อตั้งโดยทีม Socialgiver มีเป้าหมายหลักในการระดมทุน ',
         nowFund : 150,
@@ -22,7 +22,7 @@ export const datas = [
     {
         id:3,
         title:'Protect Our Doctors',
-        picture:'https://d2g79oifq3rgie.cloudfront.net/wp-content/uploads/2020/03/24094032/latest.png',
+        picture:'https://storage.googleapis.com/techsauce-prod/ugc/uploads/2020/5/children-602967_1920.jpg',
         shortDesc:'ระดมทุนช่วยเหลือบุคลากรทางการแพทย์ ต้านวิกฤตโรคติดเชื้อ โควิด 19',
         description : 'เป้าหมายหลักของการระดมทุนครั้งนี้คือ การเพิ่มศักยภาพในการให้ความช่วยเหลือแก่ผู้ป่วยติดเชื้อไวรัสโคโรนา',
         nowFund : 150,
