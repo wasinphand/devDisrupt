@@ -24,6 +24,8 @@ import {
 } from "@chakra-ui/core";
 import { withRouter } from "next/router";
 import { datas } from "../hookApi/mockData";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 import Activitycomponent from "../Component/Activitytrack";
 import Financialcomponent from "../Component/Financialtrack";
@@ -33,18 +35,18 @@ import Link from "next/link";
 
 // Sample card from Airbnb
 
-function AirbnbExample() {
-  const property = {
-    imageUrl:
-      "https://thumbs.dreamstime.com/b/sponsor-stamp-vector-sign-seal-logo-isolated-white-background-86263619.jpg",
-    imageAlt: "Rear view of modern home with pool",
-    beds: 3,
-    baths: 2,
-    title: "Modern home in city center in the heart of historic Los Angeles",
-    formattedPrice: "$1,900.00",
-    reviewCount: 34,
-    rating: 4,
-  };
+/*function AirbnbExample() {
+    const property = {
+        imageUrl:
+            "https://thumbs.dreamstime.com/b/sponsor-stamp-vector-sign-seal-logo-isolated-white-background-86263619.jpg",
+        imageAlt: "Rear view of modern home with pool",
+        beds: 3,
+        baths: 2,
+        title: "Modern home in city center in the heart of historic Los Angeles",
+        formattedPrice: "$1,900.00",
+        reviewCount: 34,
+        rating: 4
+    };
 
   return (
     <Box
@@ -95,49 +97,52 @@ function AirbnbExample() {
             {property.reviewCount} reviews
           </Box>
         </Box>
-      </Box>
-    </Box>
-  );
-}
+    );
+}*/
 
 //function Projectdetail()
 const Projectdetail = ({ router }) => {
-  const data = datas[router.query.id];
-
-  return (
-    <PageLayout>
-      <Flex bg="white">
-        <Flex width="70vw" align="flex-top">
-          <Box>
-            <Box p={6}>
-              <Heading>{datas[router.query.id].title}</Heading>
-              <Text fontSize="xl" color="gray.500">
-                {data.description}
-              </Text>
-            </Box>
-            <Box textAlign="center">
-              <Image
-                boxShadow="1px 1px 10px #E2E8F0"
-                mt={4}
-                mx="auto"
-                width="80%"
-                rounded="30px"
-                src={datas[router.query.id].picture}
-                alt="Segun Adebayo"
-              />
-            </Box>
-            <Box mt={5} mx={10}>
-              <Text>ระดมทุนได้</Text>
-            </Box>
-            <Box mx={10} width="87%">
-              <Flex>
-                <Box width="50vw">
-                  <Flex align="flex-end">
-                    <Text fontSize="30px">
-                      ฿{datas[router.query.id].nowFund}
-                    </Text>
-                    <Text mb={1} fontSize="15px" color="gray.500">
-                      {" "}
+    const data = datas[router.query.id];
+    //console.log(router.query.id);
+    return (
+        <PageLayout>
+          <MessengerCustomerChat
+        pageId="113192920586080"
+        appId="2778967335539406"
+      />
+          { data &&
+            <Flex bg="white">
+                <Flex width="70vw" align="flex-top">
+                    <Box>
+                        <Box p={6}>
+                            <Heading>{datas[router.query.id].title}</Heading>
+                            <Text fontSize="xl" color="gray.500">
+                                {data.description}
+                            </Text>
+                        </Box>
+                        <Box textAlign="center">
+                            <Image
+                                boxShadow="1px 1px 10px #E2E8F0"
+                                mt={4}
+                                mx="auto"
+                                width="80%"
+                                rounded="30px"
+                                src={datas[router.query.id].picture}
+                                alt="Segun Adebayo"
+                            />
+                        </Box>
+                        <Box mt={5} mx={10}>
+                            <Text>ระดมทุนได้</Text>
+                        </Box>
+                        <Box mx={10} width="87%">
+                            <Flex>
+                                <Box width="50vw">
+                                    <Flex align="flex-end">
+                                        <Text fontSize="30px">
+                                            ฿{datas[router.query.id].nowFund}
+                                        </Text>
+                                        <Text mb={1} fontSize="15px" color="gray.500">
+                                            {" "}
                       / ฿{datas[router.query.id].totalFund}
                     </Text>
                   </Flex>

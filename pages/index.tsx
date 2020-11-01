@@ -10,7 +10,7 @@ export default function Home() {
   return (
 
     <ThemeProvider>
-      <MessengerCustomerChat
+     <MessengerCustomerChat
         pageId="113192920586080"
         appId="2778967335539406"
       />
