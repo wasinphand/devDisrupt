@@ -6,6 +6,7 @@ function Index({ Component, pageProps }) {
     <>
    
       <ThemeProvider>
+      
         <CSSReset />
         <Component {...pageProps} />
       </ThemeProvider>

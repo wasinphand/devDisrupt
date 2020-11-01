@@ -2,6 +2,7 @@ import styles from '../styles/Home.module.css'
 import { Icon } from "@chakra-ui/core";
 import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import { Box, Heading, Image, Text, Stack, Progress } from "@chakra-ui/core";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 
 const download = e => {
@@ -26,6 +27,10 @@ const download = e => {
   };
 const Summary = () => (
     <ThemeProvider>
+        <MessengerCustomerChat
+        pageId="113192920586080"
+        appId="2778967335539406"
+      />
                <CSSReset/>
     <div >
         <Box

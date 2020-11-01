@@ -24,6 +24,8 @@ import {
 } from "@chakra-ui/core";
 import { withRouter } from "next/router";
 import { datas } from "../hookApi/mockData";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 import Activitycomponent from "../Component/Activitytrack";
 import Financialcomponent from "../Component/Financialtrack";
@@ -105,6 +107,10 @@ const Projectdetail = ({ router }) => {
     //console.log(router.query.id);
     return (
         <PageLayout>
+          <MessengerCustomerChat
+        pageId="113192920586080"
+        appId="2778967335539406"
+      />
           { data &&
             <Flex bg="white">
                 <Flex width="70vw" align="flex-top">
