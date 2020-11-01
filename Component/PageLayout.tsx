@@ -6,7 +6,7 @@ const PageLayout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <Box p={8} bg="gray.100">
+      <Box p={8} bg="gray.100" >
         {children}
       </Box>
     </>
