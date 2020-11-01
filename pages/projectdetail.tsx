@@ -24,7 +24,9 @@ import { datas } from "../hookApi/mockData";
 
 import Activitycomponent from "../Component/Activitytrack";
 import Financialcomponent from "../Component/Financialtrack";
+import Commentcomponent from "../Component/Commentdetail";
 import PageLayout from "../Component/PageLayout";
+
 
 // Sample card from Airbnb
 
@@ -94,9 +96,8 @@ function AirbnbExample() {
     </Box>
   );
 }
-function Commentbox() {
-  return <Flex>Test</Flex>;
-}
+
+
 
 //function Projectdetail()
 const Projectdetail = ({ router }) => {
@@ -256,10 +257,7 @@ const Projectdetail = ({ router }) => {
                   </TabPanel>
                   <TabPanel p={5}>
                     {/* comment */}
-
-
-
-                    <Commentbox />
+<Commentcomponent/>
                   </TabPanel>
                 </TabPanels>
               </Tabs>
