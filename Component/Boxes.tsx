@@ -1,6 +1,6 @@
 import { Box, Image, SimpleGrid } from "@chakra-ui/core";
 import { datas } from "../hookApi/mockData";
-import Card from "./Card";
+import Card from "./card";
 
 export default function Boxes() {
   return (
