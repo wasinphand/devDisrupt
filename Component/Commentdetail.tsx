@@ -1,8 +1,8 @@
-import { Box, Image, Text, Flex, Heading, Button, Badge, Stack } from "@chakra-ui/core";
+import { PseudoBox, Box, Image, Text, Flex, Heading, Button, Badge, Stack } from "@chakra-ui/core";
 
 function Comment({ title, desc, linkim, ...rest }) {
     return (
-        <Box p={5} shadow="md" borderWidth="1px" {...rest}>
+        <Box rounded="20px" p={5} shadow="md" borderWidth="1px" {...rest}>
             <Flex>
                 <Flex>
                     <Image rounded="full" size="30px" src={linkim} />
@@ -26,13 +26,13 @@ function Feature({ title, desc, money, linkto, ...rest }) {
 }
 function CommentCore({ title, desc, linkim, ...rest }) {
     return (
-        <Box p={5} shadow="md" borderWidth="1px" {...rest}>
+        <Box rounded="20px" p={5} shadow="md" borderWidth="1px" {...rest}>
             <Flex>
                 <Flex>
                     <Image rounded="full" size="30px" src={linkim} />
                     <Heading mx={3} my={1} fontSize="xl">
                         {title}
-                        <Badge variantColor="red" fontSize="xl" ml={2}>
+                        <Badge p={1} variantColor="red" fontSize="sm" ml={2}>
                             Core Team
               </Badge>
                     </Heading>
@@ -45,13 +45,13 @@ function CommentCore({ title, desc, linkim, ...rest }) {
 export default function Commentcomponent() {
     return (
         <Box>
-            <Flex justify="center">
-                <Text fontSize="5xl" fontWeight="bold">
-                    <Badge fontSize="0.8em" variantColor="white">
-                        Comment
-            </Badge>
-                </Text>
-            </Flex>
+         
+
+            <Box mb={4} mx="auto" bg="gray.300" p={3} textAlign="center" rounded="15px" width="50%">
+                <Text fontSize="20px">
+                Comment
+                    </Text>
+            </Box>
             <Flex justify="center">
                 <Stack spacing={3}>
                     <Comment
@@ -72,6 +72,41 @@ export default function Commentcomponent() {
                     />
                 </Stack>
             </Flex>
+            <Flex mt={5} as="form">
+                <PseudoBox
+                    as="input"
+                    placeholder="Your Question / Advice"
+                    // type="email"
+                    flex="1"
+                    py={2}
+                    px={4}
+                    rounded="md"
+                    bg="gray.100"
+                    borderWidth="1px"
+                    _hover={{ borderColor: "gray.200", bg: "gray.200" }}
+                    _focus={{
+                        outline: "none",
+                        bg: "white",
+                        boxShadow: "outline",
+                        borderColor: "gray.300",
+                    }}
+                />
+                <PseudoBox
+                    as="button"
+                    bg="teal.500"
+                    py={2}
+                    px={4}
+                    ml={3}
+                    rounded="md"
+                    fontWeight="semibold"
+                    color="white"
+                    _hover={{ bg: "teal.600" }}
+                    _focus={{ boxShadow: "outline" }}
+                >
+                    Send
+  </PseudoBox>
+            </Flex>
         </Box>
+
     );
 }

@@ -4708,7 +4708,7 @@ promise-inflight@^1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
-prop-types@15.7.2, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@15.7.2, prop-types@>=15.5.0, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -4817,6 +4817,13 @@ react-animate-height@2.0.21:
     classnames "^2.2.5"
     prop-types "^15.6.1"
 
+react-async-script@0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/react-async-script/-/react-async-script-0.9.1.tgz#d4a496c726fab0c6ef05998ab16e50c742820b60"
+  integrity sha1-1KSWxyb6sMbvBZmKsW5Qx0KCC2A=
+  dependencies:
+    prop-types ">=15.5.0"
+
 react-clientside-effect@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/react-clientside-effect/-/react-clientside-effect-1.2.2.tgz#6212fb0e07b204e714581dd51992603d1accc837"
@@ -4854,6 +4861,20 @@ react-is@^17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
+
+react-messenger-customer-chat@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/react-messenger-customer-chat/-/react-messenger-customer-chat-0.8.0.tgz#c0696af9f71d5804a1b1149ae67d672802dee15d"
+  integrity sha512-7HItF+2nElXCBLi1q5eccgE9X4P86BmjmzF5nBcok+hJNWVjdKJTdWxl9VZTQnjkp3GHB7WwTwN2l3d/RKmFuQ==
+  dependencies:
+    prop-types "^15.6.0"
+
+react-messenger-plugin@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-messenger-plugin/-/react-messenger-plugin-2.1.0.tgz#9556ee1df6a7e42d80cc0b7a979c95de5d3e8daa"
+  integrity sha512-P5o64PJmWKyOXWEXMESWqNCEaYb091EFPJheHLNFk51URVDF3qiI1U8xmIUTBKGSh+De4v3HdtuqW56S2hLo0A==
+  dependencies:
+    react-async-script "0.9.1"
 
 react-refresh@0.8.3:
   version "0.8.3"

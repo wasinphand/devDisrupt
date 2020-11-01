@@ -1,13 +1,13 @@
-import { Box, Image, Text, Flex, Heading ,Button} from "@chakra-ui/core";
+import { Box, Image, Text, Flex, Heading ,Button,Badge} from "@chakra-ui/core";
 
 function Feature({ done, title, desc, ...rest }) {
     return (
         <Box rounded="20px" p={5} my={5} shadow="md" borderWidth="1px" {...rest}>
             <Flex>
                 <Heading fontSize="xl">{title}</Heading>
-                {done ? <Button ml="auto" variantColor="teal" size="sm">
-                    Done
-  </Button> : <Button ml="auto" variantColor="red" size="sm" isDisabled>
+                {done ? <Badge ml="auto" px={2} py={1} variant="solid" variantColor="green">
+    Success
+  </Badge> : <Button ml="auto" variantColor="red" size="sm" isDisabled>
                     Not yet
   </Button>}
 
