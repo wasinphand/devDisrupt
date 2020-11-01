@@ -69,12 +69,15 @@ function Sidecard() {
 function Featurefinance({ title, desc, money, linkto, ...rest }) {
   return (
     <Box rounded="20px" p={5} my={5} shadow="md" borderWidth="1px" {...rest}>
+      <Flex>
       <Heading fontSize="xl">{title}</Heading>
+      <Link href={linkto}>
+        <Button ml="auto">See more</Button>
+      </Link>
+      </Flex>
       <Heading fontSize="s">{money}</Heading>
       <Text my={4}>{desc}</Text>
-      <Link href={linkto}>
-        <Button>See more</Button>
-      </Link>
+      
     </Box>
   );
 }
@@ -82,21 +85,12 @@ function Featurefinance({ title, desc, money, linkto, ...rest }) {
 export default function Financialcomponent() {
   return (
     <Box>
-      <Flex align="center" justify="center">
-        <Text fontSize="5xl" fontWeight="bold">
-          <Link href="/Finance">
-            <Badge
-              p={3}
-              rounded="10px"
-              ml="1"
-              fontSize="0.8em"
-              variantColor="green"
-            >
-              Finance tracking
-            </Badge>
-          </Link>
-        </Text>
-      </Flex>
+
+      <Box mx="auto" bg="gray.300" p={3} textAlign="center" rounded="15px" width="50%">
+                <Text fontSize="20px">
+                Finance tracking
+                    </Text>
+            </Box>
       <Flex align="center">
         <Flex>
           <Stack spacing={4}>
