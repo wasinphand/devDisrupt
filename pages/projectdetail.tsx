@@ -102,9 +102,10 @@ import PageLayout from "../Component/PageLayout";
 //function Projectdetail()
 const Projectdetail = ({ router }) => {
     const data = datas[router.query.id];
-
+    //console.log(router.query.id);
     return (
         <PageLayout>
+          { data &&
             <Flex bg="white">
                 <Flex width="70vw" align="flex-top">
                     <Box>
@@ -355,7 +356,7 @@ const Projectdetail = ({ router }) => {
                         </Box>
                     </Stack>
                 </Flex>
-            </Flex>
+            </Flex>}
         </PageLayout>
     );
 };
