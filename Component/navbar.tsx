@@ -1,11 +1,11 @@
 import React from "react";
-import { Box } from "@chakra-ui/core";
+import { Box, Image } from "@chakra-ui/core";
 
 const Navbar = () => {
   return (
     <>
-      <Box bg="white" w="100%" p={4} shadow="md">
-        LOGO
+      <Box bg="white" w="100%" px={8} py={4} shadow="md">
+        <Image src="/asahub-logo.png" height="64px" />
       </Box>
     </>
   );

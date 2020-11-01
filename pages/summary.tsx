@@ -35,12 +35,13 @@ const Summary = () => (
             display="flex"
             flexDir="column"
             rounded="lg"
+            
         >
             <b style={{fontSize:"30px",color:'teal'}}>
                 สรุปผลการดำเนินการ โครงการ COVID-19
             </b>
         </Box>
-       <table className={styles.table}>
+       <table className={styles.table} style={{width:"85%"}}>
            <tr  className={styles.table}>
                <th  className={styles.table}><b>วันที่</b></th>
                <th  className={styles.table}><b>รายละเอียด</b></th>
